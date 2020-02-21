@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Space-Light</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Space-Light">
+  <title>Java I/O操作 | Space-Light</title>
+  <meta name="keywords" content=" I/O ">
+  <meta name="description" content="Java I/O操作 | Space-Light">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="C代码测试# include &lt;stdio.h&gt; # include &lt;stdlib.h&gt; int main() {     printf(&quot;hello world!&quot;);     return 0; } Java代码测试&#x2F;** * 在源代码中存在泛型 *&#x2F; public static void main(String[] args) {     Map">
 <meta property="og:type" content="article">
@@ -53,7 +53,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/timg.jpg" />
@@ -219,12 +219,44 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-java" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#关于本站"><span class="toc-text">关于本站</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么开通博客？"><span class="toc-text">为什么开通博客？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#研究生读了计算机相关专业，因此借搭建博客练练手。"><span class="toc-text">研究生读了计算机相关专业，因此借搭建博客练练手。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于作者"><span class="toc-text">关于作者</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#目前研究生在读，平时喜欢鼓捣点互联网的东西。"><span class="toc-text">目前研究生在读，平时喜欢鼓捣点互联网的东西。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客搭建"><span class="toc-text">博客搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#本博客是通过-Hexo-生成的，现已部署在个人的GitHub-Pages。"><span class="toc-text">本博客是通过 Hexo 生成的，现已部署在个人的GitHub Pages。</span></a></li></ol></li></ol></li></ol>
+        <h1 class="article-title">Java I/O操作</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="Java">Java</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color4">I/O</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间: <time class="date" title='更新时间: 2020-02-21 19:04:59'>2020-02-17</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-I-O流的概念"><span class="toc-text">1. I&#x2F;O流的概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-代码测试"><span class="toc-text">2. 代码测试</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -237,16 +269,60 @@
     }
 </style>
 </div>
-            <h1 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a><strong>关于本站</strong></h1><h2 id="为什么开通博客？"><a href="#为什么开通博客？" class="headerlink" title="为什么开通博客？"></a>为什么开通博客？</h2><blockquote>
-<h3 id="研究生读了计算机相关专业，因此借搭建博客练练手。"><a href="#研究生读了计算机相关专业，因此借搭建博客练练手。" class="headerlink" title="研究生读了计算机相关专业，因此借搭建博客练练手。"></a>研究生读了计算机相关专业，因此借搭建博客练练手。</h3></blockquote>
-<h2 id="关于作者"><a href="#关于作者" class="headerlink" title="关于作者"></a>关于作者</h2><blockquote>
-<h3 id="目前研究生在读，平时喜欢鼓捣点互联网的东西。"><a href="#目前研究生在读，平时喜欢鼓捣点互联网的东西。" class="headerlink" title="目前研究生在读，平时喜欢鼓捣点互联网的东西。"></a>目前研究生在读，平时喜欢鼓捣点互联网的东西。</h3></blockquote>
-<h2 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h2><blockquote>
-<h3 id="本博客是通过-Hexo-生成的，现已部署在个人的GitHub-Pages。"><a href="#本博客是通过-Hexo-生成的，现已部署在个人的GitHub-Pages。" class="headerlink" title="本博客是通过 Hexo 生成的，现已部署在个人的GitHub Pages。"></a>本博客是通过 <a href="https://hexo.io/" target="_blank" rel="noopener"><em>Hexo</em></a> 生成的，现已部署在个人的<a href="https://github.com/Maverick-3" target="_blank" rel="noopener"><em>GitHub Pages</em></a>。</h3></blockquote>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-I-O流的概念"><a href="#1-I-O流的概念" class="headerlink" title="1. I/O流的概念"></a>1. I/O流的概念</h3><p>&emsp;&emsp; Java对文本输入、输出的操作基础是流(I/O stream), 处理方式又可分为字节流(byte stream)处理、字符流(character stream)处理两种。整个“流”的方法框图如图1所示。</p>
+<div align="center"><br>
+<img src="/2020/02/17/java/IO.JPG" alt="Java I/O流框图" width="80%" height="60%">
+</div>
 
-        </article>
-        
-        
+<p><code>缓存流</code><br><br><br>缓存流就好比<code>搬移</code>很大一堆东西，一次性搬不完，那么就一小撮一小撮地去搬。输入或输出流先送到缓存流中，然后再从缓存中进行读写操作，缓存用完之后再去磁盘中“搬运”。缓存流的使用可以有效地减少I/O操作。</p>
+<h3 id="2-代码测试"><a href="#2-代码测试" class="headerlink" title="2. 代码测试"></a>2. 代码测试</h3><pre><code class="java">/**
+ * Java文件文本操作测试
+ */
+
+public class test {
+    public static void main(String[] args) {
+        String path = &quot;./src/1.txt&quot;;
+        String outPath = &quot;./src/out.txt&quot;;
+
+        try ( // 读入文本病放到缓存流中
+                FileReader fr = new FileReader(path);
+                BufferedReader br = new BufferedReader(fr);
+                // 以缓存流的方式写出
+                FileWriter fw = new FileWriter(outPath);
+                PrintWriter pw = new PrintWriter(fw)) {
+
+            while (true) {
+                String line = br.readLine();
+                if (line == null) {
+                    break;
+                }
+                pw.println(line);
+            }
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+    }
+}</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源。 </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">©2020 Maverick || powered by <a href="https://hexo.io/" target="_blank">Hexo</a> theme</p>
