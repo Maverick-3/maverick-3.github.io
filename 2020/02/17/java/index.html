@@ -245,7 +245,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间: <time class="date" title='更新时间: 2020-02-21 23:01:11'>2020-02-17</time>
+        创建时间: <time class="date" title='更新时间: 2020-02-21 23:31:30'>2020-02-17</time>
         
     </div>
     <div class="article-meta">
@@ -274,10 +274,12 @@
       
         <h3 id="1-I-O流的概念"><a href="#1-I-O流的概念" class="headerlink" title="1. I/O流的概念"></a>1. I/O流的概念</h3><p>&emsp;&emsp; Java对文本输入、输出的操作基础是流(I/O stream), 处理方式又可分为字节流(byte stream)处理、字符流(character stream)处理两种。整个“流”的方法框图如图1所示。</p>
 <div align="center">
-<img src="/2020/02/17/java/IO.JPG" alt="Java I/O流框图" width="80%" height="60%">
+<img src="/2020/02/17/java/IO.jpg" alt="Java I/O流框图" width="80%" height="60%">
 </div>
 
-<p><code>缓存流</code><br><br><br>缓存流就好比<code>搬移</code>很大一堆东西，一次性搬不完，那么就一小撮一小撮地去搬。输入或输出流先送到缓存流中，然后再从缓存中进行读写操作，缓存用完之后再去磁盘中“搬运”。缓存流的使用可以有效地减少I/O操作。</p>
+<ul>
+<li><code>缓存流</code><br>缓存流就好比<code>搬移</code>很大一堆东西，一次性搬不完，那么就一小撮一小撮地去搬。输入或输出流先送到缓存流中，然后再从缓存中进行读写操作，缓存用完之后再去磁盘中“搬运”。缓存流的使用可以有效地减少I/O操作。</li>
+</ul>
 <h3 id="2-代码测试"><a href="#2-代码测试" class="headerlink" title="2. 代码测试"></a>2. 代码测试</h3><pre><code class="java">/**
  * Java文件文本操作测试
  */
